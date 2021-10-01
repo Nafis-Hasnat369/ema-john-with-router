@@ -8,9 +8,32 @@ const Header = () => {
         <div className="header">
             <img className="logo" src={logo} alt="" />
             <nav>
-                <NavLink to="/shop">Shop</NavLink>
-                <NavLink to="/review">Order Review</NavLink>
-                <NavLink to="/inventory">Manage Inventory</NavLink>
+                <NavLink
+                    activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+                    to="/shop">
+                    Shop
+                </NavLink>
+
+                <NavLink
+                    activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+                    to="/review">
+                    Order Review
+                </NavLink>
+
+                <NavLink
+                    activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+                    to="/inventory">
+                    Manage Inventory
+                </NavLink>
             </nav>
         </div>
     );
